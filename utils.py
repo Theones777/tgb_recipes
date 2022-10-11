@@ -31,3 +31,6 @@ def register_handlers_main(dp: Dispatcher):
     dp.register_message_handler(start, commands="start", state="*")
     dp.register_message_handler(first_chosen, state=ChooseIndrids.get_first_ingrid)
     dp.register_message_handler(sec_chosen, state=ChooseIndrids.get_second_ingrid)
+
+
+# await message.answer(message.from_user['username'])
